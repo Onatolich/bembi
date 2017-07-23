@@ -56,6 +56,12 @@
     var modifiers = [];
     var additional = [];
 
+    if (cls instanceof Array) {
+      args = args.concat(cls.splice(1));
+    } else if (typeof cls !== 'string') {
+      throw new Error('String or Array expected as first argument, [' + typeof cls + '] is given');
+    }
+
     forEach(args, function(entry) {
       switch (typeof entry) {
         case 'object':
