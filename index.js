@@ -45,6 +45,8 @@
       var modifier = key;
       if (typeof value !== 'boolean') {
         modifier = [key, value].join('-');
+      } else if (!value) {
+        return;
       }
       return createClassModifier(cls, modifier);
     });
