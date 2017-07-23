@@ -1,0 +1,24 @@
+{
+  "name": "bembi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onatolich/bembi.git"
+  },
+  "keywords": [
+    "bem",
+    "class",
+    "classes",
+    "classname",
+    "classnames",
+    "component",
+    "css",
+    "scss",
+    "react",
+    "utility"
+  ],
+  "author": "Onatolich",
+  "license": "MIT"
+}
