@@ -1,6 +1,6 @@
 {
   "name": "bembi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight and powerful class names utility without dependencies",
   "main": "index.js",
   "repository": {
