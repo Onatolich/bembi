@@ -7,7 +7,7 @@ $ npm install bembi
 ```
 
 ## Import
-```
+```js
 import bembi from 'bembi'; // ES6
 const bembi = require('bembi'); // AMD
 ```
@@ -19,7 +19,7 @@ const bembi = require('bembi'); // AMD
 Bembi accepts any amount of arguments. Accepted arguments types are String, Array\<String> and Object.
 
 But there is an exception: first argument can be only String or Array\<String>!
-```
+```js
 // good
 bembi('', [], '', {}, ...);
 bembi([''], '', [], {}, ...);
@@ -31,7 +31,7 @@ bembi({}, [], '', ...);
 #### Base usage
 
 In base case bembi is just joining passed class names.
-```
+```js
 bembi('class1', 'class2', 'class3', ...);   // Result: "class1 class2 class3 ..."
 bembi(['class1', 'class2', 'class3', ...]); // Result: "class1 class2 class3 ..."
 ```
@@ -41,7 +41,7 @@ bembi(['class1', 'class2', 'class3', ...]); // Result: "class1 class2 class3 ...
 In fact bembi is a powerful BEM class names utility.
 
 Next example will show how bembi resolves different arguments to BEM modifiers: 
-```
+```js
 bembi(
   'Button',
   [
